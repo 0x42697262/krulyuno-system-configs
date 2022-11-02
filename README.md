@@ -18,6 +18,8 @@ acpilight pipewire pipewire-alsa wiruplumber pipewire-jack pipewire-pulse pipewi
 2. Install `makepkd -si krulyuno-system-configs`
 
 # Do these after installation
+Run `post_install.sh` as root or manually run each commands:
+
 ### Making acpilight work
 1. `usermod -aG video birb`
 
