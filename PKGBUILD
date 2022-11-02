@@ -24,5 +24,4 @@ sha256sums=()
 package() {
         install -d "${pkgdir}/etc/udev/rules.d"
         cp -r "${srcdir}/acpilight/90-backlight.rules" "${pkgdir}/etc/udev/rules.d"
-        usermod -a -G video ${whoami}
 }

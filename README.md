@@ -11,3 +11,14 @@ acpilight pipewire pipewire-alsa wiruplumber pipewire-jack pipewire-pulse pipewi
 `pipewire` - audio latency
 
 `rtkit` - maybe i need this... who knows
+
+# Installation
+
+1. Clone this repository `git clone https://github.com/KrulYuno/krulyuno-system-configs.git`
+2. Install `makepkd -si krulyuno-system-configs`
+
+# Do these after installation
+### Making acpilight work
+1. `usermod -aG video birb`
+
+
