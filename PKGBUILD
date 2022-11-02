@@ -4,21 +4,25 @@ pkgver=1.0.0
 pkgrel=1
 pkgdesc="My personal system configs when installing arch for my laptop."
 arch=('any')
-url=""
+url="https://github.com/KrulYuno/krulyuno-system-configs"
 license=('GPL3')
-depends=()
+depends=(
+        'acpilight'
+        'pipewire'
+        'pipewire-alsa'
+        'pipewire-jack'
+        'pipewire-audio'
+        'pipewire-pulse'
+)
 makedepends=()
-backup=()
-source=("$pkgname-$pkgver.tar.gz"
-        "$pkgname-$pkgver.patch")
+backup=(
+        'etc/udev/rules.d/90-backlight.rules'
+)
+source=()
 sha256sums=()
 
-prepare() {
-	cd "$pkgname-$pkgver"
-	patch -p1 -i "$srcdir/$pkgname-$pkgver.patch"
-}
-
 package() {
-	cd "$pkgname-$pkgver"
-	make DESTDIR="$pkgdir/" install
+        install -d "${pkgdir}/etc/udev/rules.d"
+        cp -r "${srcdir}/acpilight/90-backlight.rules" "${pkgdir}/etc/udev/rules.d"
+        usermod -a -G video ${whoami}
 }

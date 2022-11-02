@@ -1,5 +1,5 @@
 # krulyuno-system-configs
-Personal PKGBUILD for my arch setup. This repo is not for everyone to use since I am using this repo PKGBULID to track my changes in my arch setup.
+Personal PKGBUILD for my arch setup. This repo is not for everyone to use since I am using this repo PKGBUILD to track my changes in my arch setup.
 
 # Dependencies
 ```bash
