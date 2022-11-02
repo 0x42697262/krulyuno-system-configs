@@ -7,5 +7,7 @@ acpilight pipewire pipewire-alsa wiruplumber pipewire-jack pipewire-pulse pipewi
 ```
 
 `acpilight` - adjust my monitor display brighness
+
 `pipewire` - audio latency
+
 `rtkit` - maybe i need this... who knows
