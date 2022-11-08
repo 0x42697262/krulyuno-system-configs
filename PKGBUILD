@@ -17,6 +17,7 @@ depends=(
 makedepends=()
 backup=(
         'etc/udev/rules.d/90-backlight.rules'
+        'etc/X11/xorg.conf.d/30-touchpad.conf'
 )
 source=()
 sha256sums=()
@@ -24,4 +25,6 @@ sha256sums=()
 package() {
         install -d "${pkgdir}/etc/udev/rules.d"
         cp -r "${srcdir}/acpilight/90-backlight.rules" "${pkgdir}/etc/udev/rules.d"
+        install -d "${pkgdir}/etc/X11/xorg.conf.d"
+        cp -r "${srcdir}/X11/30-touchpad.conf" "${pkgdir}/etc/X11/xorg.conf.d"
 }
