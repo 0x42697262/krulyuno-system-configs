@@ -1,6 +1,6 @@
 # Maintainer: KrulYuno <Discord: Lost Felt#8517>
 pkgname=krulyuno-system-configs
-pkgver=1.0.0
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="My personal system configs when installing arch for my laptop."
 arch=('any')
